@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  height: calc(100vh - 60px);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Join Page */
+.join-container {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.join-container h1 {
+  margin-bottom: 10px;
+  color: #4a69bd;
+}
+
+.form-group {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4a69bd;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3c5aa6;
+}
+
+/* Chat Page */
+.chat-container {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  background-color: #4a69bd;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.incoming {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.outgoing {
+  background-color: #4a69bd;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-form {
+  padding: 15px;
+  display: flex;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.chat-form input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.message-info {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.outgoing .message-info {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.user-count {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 15px;
+} 
